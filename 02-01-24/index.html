@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add Product</h1>
+    <label for="product_name">Product Name:</label>
+    <input type="text" name="product_name" /><br /><br />
+
+    <label for="product_price">Price:</label>
+    <input type="number" name="product_price" /><br /><br />
+
+    <label for="product_image">Product image:</label>
+    <input type="text" name="product_image" /><br /><br />
+
+    <select name="product_category">
+      <option value="Drinks">Drinks</option>
+      <option value="Meat">Meat</option>
+      <option value="Dairy">Dairy</option>
+      <option value="Snacks">Snacks</option>
+      <option value="Basic">Basic</option>
+    </select>
+
+    <br /><br />
+    <button id="product_add">Add Product</button>
+
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>image</th>
+          <th>category</th>
+        </tr>
+      </thead>
+      <tbody id="tableProducts"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
